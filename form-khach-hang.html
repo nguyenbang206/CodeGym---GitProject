@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Market Research Survey</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #222;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            padding: 8px 18px 25px;
+        }
+
+        /* Tiêu đề */
+        .header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            color: #666;
+            font-size: 11px;
+        }
+
+        /* Nhóm câu hỏi */
+        .question {
+            margin-bottom: 14px;
+        }
+
+        .question-title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        /* Select */
+        select {
+            width: 50%;
+            height: 22px;
+            border: 1px solid #aaa;
+            background-color: white;
+        }
+
+        /* Radio và checkbox */
+        .option {
+            margin: 6px 0;
+        }
+
+        .option input {
+            margin-right: 7px;
+        }
+
+        /* Ô Other */
+        .other-input {
+            width: 125px;
+            height: 21px;
+            margin-left: 18px;
+            margin-top: 2px;
+        }
+
+        /* Tiền */
+        .price {
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        .price .dollar {
+            font-size: 16px;
+        }
+
+        .price input {
+            height: 22px;
+            border: 1px solid #aaa;
+        }
+
+        .dollars {
+            width: 65px;
+        }
+
+        .cents {
+            width: 25px;
+        }
+
+        .price-label {
+            font-size: 10px;
+            margin-left: 10px;
+            color: #444;
+        }
+
+        /* Textarea */
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #aaa;
+            resize: vertical;
+            padding: 5px;
+        }
+
+        /* Bảng đánh giá */
+        .rating-intro {
+            margin: 18px 0 7px;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .rating-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .rating-table th,
+        .rating-table td {
+            border: 1px solid #ccc;
+            padding: 7px;
+        }
+
+        .rating-table th {
+            background-color: #e5e5e5;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .rating-table th:first-child {
+            width: 42%;
+        }
+
+        .rating-table td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .rating-table td:not(:first-child) {
+            text-align: center;
+        }
+
+        .rating-table input {
+            display: block;
+            margin: 0 auto 4px;
+        }
+
+        .rating-number {
+            font-size: 10px;
+            color: #555;
+        }
+
+        /* Nút Submit */
+        .submit-area {
+            margin-top: 18px;
+        }
+
+        .submit-btn {
+            padding: 3px 10px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 15px 5px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #666;
+        }
+
+        .wufoo {
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            select {
+                width: 100%;
+            }
+
+            .rating-table {
+                font-size: 10px;
+            }
+
+            .rating-table th,
+            .rating-table td {
+                padding: 4px;
+            }
+
+            .rating-table th:first-child {
+                width: 35%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TIÊU ĐỀ -->
+    <div class="header">
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+    </div>
+
+
+    <form action="#" method="post">
+
+        <!-- ĐỘ TUỔI -->
+        <div class="question">
+            <label class="question-title" for="age">
+                What is your age range?
+            </label>
+
+            <select id="age" name="age">
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65+">65+</option>
+            </select>
+        </div>
+
+
+        <!-- THU NHẬP -->
+        <div class="question">
+            <label class="question-title" for="income">
+                What is your yearly income range?
+            </label>
+
+            <select id="income" name="income">
+                <option value="0-25000">$0 - $25,000</option>
+                <option value="25001-50000">$25,001 - $50,000</option>
+                <option value="50001-75000">$50,001 - $75,000</option>
+                <option value="75001-100000">$75,001 - $100,000</option>
+                <option value="100000+">$100,000+</option>
+            </select>
+        </div>
+
+
+        <!-- GIỚI TÍNH -->
+        <div class="question">
+
+            <span class="question-title">
+                Gender Identity
+            </span>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="gender" value="Nonbinary">
+                    Nonbinary
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+            </div>
+
+            <input
+                type="text"
+                name="gender_other"
+                class="other-input"
+                aria-label="Other gender"
+            >
+
+        </div>
+
+
+        <!-- SẢN PHẨM ĐÃ MUA -->
+        <div class="question">
+
+            <span class="question-title">
+                Which of the following products have your purchased in the last 2 months.
+                Please check all that apply.
+            </span>
+
+            <div class="option">
+                <label>
+                    <input type="checkbox" name="products[]" value="Product 1">
+                    Product 1
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="checkbox" name="products[]" value="Product 2">
+                    Product 2
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="checkbox" name="products[]" value="Product 3">
+                    Product 3
+                </label>
+            </div>
+
+        </div>
+
+
+        <!-- TẦN SUẤT SỬ DỤNG -->
+        <div class="question">
+
+            <span class="question-title">
+                How often would you use our new product?
+            </span>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="frequency" value="Daily">
+                    Daily
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="frequency" value="Weekly">
+                    Weekly
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="radio" name="frequency" value="Monthly">
+                    Monthly
+                </label>
+            </div>
+
+        </div>
+
+
+        <!-- GIÁ -->
+        <div class="question">
+
+            <span class="question-title">
+                What would you pay for the new product?
+            </span>
+
+            <div class="price">
+
+                <span class="dollar">$</span>
+
+                <div>
+                    <input
+                        type="text"
+                        name="dollars"
+                        class="dollars"
+                    >
+
+                    <div class="price-label">
+                        Dollars
+                    </div>
+                </div>
+
+                <span>.</span>
+
+                <div>
+                    <input
+                        type="text"
+                        name="cents"
+                        class="cents"
+                    >
+
+                    <div class="price-label">
+                        Cents
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TÍNH NĂNG -->
+        <div class="question">
+
+            <label class="question-title" for="features">
+                What features would you like to see in the new product.
+            </label>
+
+            <textarea
+                id="features"
+                name="features"
+            ></textarea>
+
+        </div>
+
+
+        <!-- BẢNG ĐÁNH GIÁ -->
+        <div class="rating-intro">
+            Please rate your level of agreement with the following statements.
+        </div>
+
+        <table class="rating-table">
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- CÂU 1 -->
+                <tr>
+                    <td>
+                        Our products are priced fairly.
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="price_rating"
+                            value="1"
+                        >
+                        <div class="rating-number">1</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="price_rating"
+                            value="2"
+                        >
+                        <div class="rating-number">2</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="price_rating"
+                            value="3"
+                        >
+                        <div class="rating-number">3</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="price_rating"
+                            value="4"
+                        >
+                        <div class="rating-number">4</div>
+                    </td>
+                </tr>
+
+
+                <!-- CÂU 2 -->
+                <tr>
+                    <td>
+                        Our products are high quality.
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="quality_rating"
+                            value="1"
+                        >
+                        <div class="rating-number">1</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="quality_rating"
+                            value="2"
+                        >
+                        <div class="rating-number">2</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="quality_rating"
+                            value="3"
+                        >
+                        <div class="rating-number">3</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="quality_rating"
+                            value="4"
+                        >
+                        <div class="rating-number">4</div>
+                    </td>
+                </tr>
+
+
+                <!-- CÂU 3 -->
+                <tr>
+                    <td>
+                        You would recommend our product to a friend or coworker.
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="recommend_rating"
+                            value="1"
+                        >
+                        <div class="rating-number">1</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="recommend_rating"
+                            value="2"
+                        >
+                        <div class="rating-number">2</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="recommend_rating"
+                            value="3"
+                        >
+                        <div class="rating-number">3</div>
+                    </td>
+
+                    <td>
+                        <input
+                            type="radio"
+                            name="recommend_rating"
+                            value="4"
+                        >
+                        <div class="rating-number">4</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <!-- SUBMIT -->
+        <div class="submit-area">
+            <input
+                type="submit"
+                value="Submit"
+                class="submit-btn"
+            >
+        </div>
+
+    </form>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            This form is protected by reCAPTCHA Enterprise and the
+            <a href="#">Google Privacy Policy</a>
+            and
+            <a href="#">Terms of Service</a>
+            apply.
+        </p>
+
+        <div class="wufoo">
+            Powered by <strong>Wufoo</strong>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
