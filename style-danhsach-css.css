@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.list-square {
+  list-style-type: square;
+}
+
+.list-roman {
+  list-style-type: upper-roman;
+}
+
+.list-image {
+  list-style-image: url('icon.png');
+}
+
+.pos-outside {
+  list-style-position: outside;
+  background-color: #e8f4f8;
+  padding: 15px 15px 15px 40px;
+}
+
+.pos-inside {
+  list-style-position: inside;
+  background-color: #e8f8f0;
+  padding: 15px;
+}
+
+.list-shorthand {
+  list-style: square inside url('icon.png');
+}
+
+.list-styled {
+  background-color: #2c3e50;
+  padding: 20px 20px 20px 40px;
+  border-radius: 8px;
+  list-style-type: disc;
+}
+
+.list-styled li {
+  color: #ecf0f1;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+.web-roadmap {
+  list-style: square inside;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.web-roadmap li {
+  color: #2c3e50;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+}
+
+.web-roadmap li:last-child {
+  margin-bottom: 0;
+}
