@@ -1,0 +1,49 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#main-title {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.bio {
+    color: #34495e;
+    text-align: center;
+}
+
+.hobby-list {
+    list-style-type: square;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.hobby-list li:nth-child(1) {
+    color: #e74c3c;
+}
+
+.hobby-list li:nth-child(2) {
+    color: #27ae60;
+}
+
+.hobby-list li:nth-child(3) {
+    color: #2980b9;
+}
+
+#btn-click {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-click:hover {
+    background-color: #1d6fa5;
+}
