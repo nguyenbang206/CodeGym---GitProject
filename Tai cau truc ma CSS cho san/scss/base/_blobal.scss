@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  padding: 20px;
+}
+
+.col-inner {
+  background-color: $col-bg;
+  color: $text-color;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
