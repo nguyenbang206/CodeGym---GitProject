@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo menu luôn nổi lên trên nội dung khác */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Phần nội dung chính */
+.main {
+    padding: 16px;
+    margin-top: 50px; /* Tránh để menu cố định che mất phần đầu nội dung */
+    height: 1500px;  /* Tạo độ dài cho trang để xuất hiện thanh cuộn */
+}
