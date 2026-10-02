@@ -1,10 +1,6 @@
 @use "../abstracts" as *;
 
 .card {
-  border: 1px solid $border-color;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 6px;
-  @include box-shadow;
-  margin-top: 20px;
+  @include box-style;
+  margin-top: 15px;
 }
