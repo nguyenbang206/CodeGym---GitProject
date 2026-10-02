@@ -1,0 +1,22 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.min-vh-25 {
+    min-height: 150px;
+}
+
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.btn-primary {
+    border-radius: 6px;
+    font-weight: 600;
+}
