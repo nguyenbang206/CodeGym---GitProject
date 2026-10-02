@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System Layout</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1 class="fw-bold mb-0">Website Bố Cục Grid System</h1>
+            <p class="lead mb-0">Thiết kế Responsive với Bootstrap 5</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">GridApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới Thiệu</a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Danh Mục
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tin Tức Công Nghệ</a></li>
+                            <li><a class="dropdown-item" href="#">Hướng Dẫn Lập Trình</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Tài Nguyên Miễn Phí</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container với Grid System -->
+    <main class="container my-5 flex-grow-1">
+        <div class="row g-4">
+            
+            <!-- Main Content: Desktop (≥992px) chiếm 8 cột (col-lg-8), Mobile (<992px) chiếm 12 cột (col-12) -->
+            <section class="col-12 col-lg-8">
+                <div class="card shadow-sm p-4 h-100">
+                    <h2 class="card-title fw-bold text-primary mb-3">Nội Dung Chính (Main Content)</h2>
+                    <p class="card-text text-muted fs-5">
+                        Đây là khu vực hiển thị nội dung chính của bài viết hoặc trang web. Khi xem trên màn hình Desktop (kích thước lớn ≥ 992px), phần này sẽ chiếm <strong>8/12 cột (col-lg-8)</strong> của Grid System.
+                    </p>
+                    <p class="card-text text-muted fs-5">
+                        Khi thu nhỏ màn hình xuống kích thước Mobile hoặc Tablet (< 992px), phần này sẽ tự động dãn rộng ra <strong>100% chiều ngang (col-12)</strong> và Sidebar sẽ được đẩy xuống phía dưới.
+                    </p>
+                    <div class="alert alert-info mt-auto mb-0" role="alert">
+                        📌 <strong>Mẹo kiểm tra:</strong> Hãy thử nhấn <kbd>F12</kbd> và bật chế độ Responsive trên trình duyệt để thấy bố cục tự động thay đổi.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar: Desktop (≥992px) chiếm 4 cột (col-lg-4), Mobile (<992px) xếp bên dưới (col-12) -->
+            <aside class="col-12 col-lg-4">
+                <div class="card shadow-sm p-4 h-100">
+                    <h3 class="card-title fw-bold text-dark mb-3">Thanh Bên (Sidebar)</h3>
+                    <p class="card-text text-muted">
+                        Khu vực này chứa thông tin phụ như bài viết nổi bật, quảng cáo, danh mục liên kết hoặc tìm kiếm.
+                    </p>
+                    <hr>
+                    <h5 class="fw-semibold">Liên kết nhanh</h5>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-transparent ps-0">👉 Hướng dẫn Bootstrap Grid</li>
+                        <li class="list-group-item bg-transparent ps-0">👉 Tối ưu hóa Responsive</li>
+                        <li class="list-group-item bg-transparent ps-0">👉 Thư viện UI Components</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 GridApp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN (Bao gồm Popper cho Dropdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
