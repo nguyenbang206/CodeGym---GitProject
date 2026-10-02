@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ex1-item1 {
+    flex-basis: 200px;
+    background-color: lightblue;
+}
+
+.ex1-item2 {
+    flex-basis: 100px;
+    background-color: lightblue;
+}
+
+.ex1-item3 {
+    flex-basis: 150px;
+    background-color: lightblue;
+}
+
+.ex2 {
+    flex-direction: column;
+    height: 400px;
+}
+
+.ex2-item {
+    flex-basis: 100px;
+    background-color: lightgreen;
+}
+
+.ex3-item {
+    flex-basis: 50%;
+    background-color: lightcoral;
+}
+
+.ex4 {
+    width: 600px;
+}
+
+.ex4-item1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: lightyellow;
+    border: 1px solid #cccccc;
+}
+
+.ex4-item2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    background-color: lightyellow;
+    border: 1px solid #cccccc;
+}
+
+.ex4-item3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: lightyellow;
+    border: 1px solid #cccccc;
+}
