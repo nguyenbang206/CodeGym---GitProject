@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.footer {
+  background-color: $footer-bg;
+  color: $text-muted;
+  padding: 40px 0 20px;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-column {
+    h4 {
+      color: $bg-white;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: $text-muted;
+          text-decoration: none;
+
+          &:hover {
+            color: $bg-white;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid lighten($footer-bg, 10%);
+    padding-top: 20px;
+    font-size: 0.875rem;
+  }
+}
