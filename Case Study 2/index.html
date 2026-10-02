@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách: Làm Chủ SASS & Frontend Modern</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER & BOOK OVERVIEW -->
+    <header class="hero-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand fw-bold fs-3" href="#">BookMaster</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto fw-semibold">
+                            <li class="nav-item"><a class="nav-link text-white" href="#overview">Tổng quan</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#author">Tác giả</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#features">Tính năng</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#prices">Giá sách</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#download">Tải về</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#reviews">Đánh giá</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row align-items-center py-4" id="overview">
+                <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Làm Chủ SASS & Kiến Trúc CSS Hiện Đại</h1>
+                    <p class="lead mb-4">Cuốn sách hướng dẫn chi tiết từ cơ bản đến nâng cao về cú pháp Dart Sass, mô hình 7-1, mixins và cách tối ưu hóa giao diện web chuyên nghiệp.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#download" class="btn btn-light btn-lg fw-bold text-primary">Tải Đọc Thử</a>
+                        <a href="#prices" class="btn btn-outline-light btn-lg fw-bold">Mua Ngay</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Book Cover" class="img-fluid book-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. AUTHOR -->
+    <section id="author" class="author-section text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Về Tác Giả</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Author" class="author-img shadow">
+                </div>
+                <div class="col-md-6 text-md-start">
+                    <h3 class="fw-bold">Alex Nguyen</h3>
+                    <p class="text-muted fw-semibold">Senior Frontend Architect & Instructor</p>
+                    <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực phát triển phần mềm và đào tạo lập trình, Alex đã giúp hàng ngàn học viên làm chủ công nghệ CSS/SASS và xây dựng các dự án quy mô lớn cho doanh nghiệp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. FEATURES -->
+    <section id="features" class="container text-center">
+        <h2 class="fw-bold mb-5">Nội Dung Nổi Bật</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 h-100 feature-card">
+                    <i class="bi bi-layers-fill text-primary display-4 mb-3"></i>
+                    <h4 class="fw-bold">Mô Hình 7-1 Standard</h4>
+                    <p class="text-muted">Tổ chức thư mục SCSS khoa học, dễ bảo trì và mở rộng cho dự án thực tế.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 feature-card">
+                    <i class="bi bi-cpu-fill text-primary display-4 mb-3"></i>
+                    <h4 class="fw-bold">Dart Sass @use & @forward</h4>
+                    <p class="text-muted">Cập nhật chuẩn SASS mới nhất, loại bỏ hoàn toàn các warning deprecated.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 feature-card">
+                    <i class="bi bi-phone-fill text-primary display-4 mb-3"></i>
+                    <h4 class="fw-bold">Responsive Grid</h4>
+                    <p class="text-muted">Kết hợp linh hoạt giữa Bootstrap Grid và Mixin Media Queries tự tạo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PRICES -->
+    <section id="prices" class="bg-light text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Bảng Giá</h2>
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="card p-4 price-card bg-white">
+                        <h4 class="fw-bold">Ebook PDF</h4>
+                        <h2 class="display-5 fw-bold text-primary my-3">199.000đ</h2>
+                        <ul class="list-unstyled mb-4 text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>File PDF chất lượng cao</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Mã nguồn thực hành</li>
+                            <li><i class="bi bi-x-circle-fill text-secondary me-2"></i>Sách in bản cứng</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary btn-lg w-100">Chọn Gói</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 price-card popular bg-white">
+                        <span class="badge bg-primary text-uppercase mb-2 py-2">Khuyên Dùng</span>
+                        <h4 class="fw-bold">Combo Sách + Mã Nguồn</h4>
+                        <h2 class="display-5 fw-bold text-primary my-3">349.000đ</h2>
+                        <ul class="list-unstyled mb-4 text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sách in bìa cứng</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ebook PDF + Mã nguồn</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hỗ trợ thắc mắc 1-1</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-lg w-100 fw-bold">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. DOWNLOAD -->
+    <section id="download" class="download-section text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Tải Đọc Thử Chương Đầu Tiên</h2>
+            <p class="lead mb-4">Nhập email để nhận ngay Chapter 1: Kiến trúc SASS Modular dạng PDF hoàn toàn miễn phí.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-lg" placeholder="Nhập địa chỉ email của bạn..." required>
+                        <button type="submit" class="btn btn-primary btn-lg text-nowrap fw-bold">Tải Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. READER'S SAY -->
+    <section id="reviews" class="container text-center">
+        <h2 class="fw-bold mb-5">Độc Giả Nói Gì?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 h-100 testimonial-card">
+                    <p class="text-muted italic">"Cuốn sách trình bày cực kỳ dễ hiểu. Cấu trúc SASS 7-1 giúp dự án công ty mình gọn gàng hơn rất nhiều."</p>
+                    <h5 class="fw-bold mb-0 mt-auto">Minh Tuấn</h5>
+                    <small class="text-primary">Frontend Developer</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 testimonial-card">
+                    <p class="text-muted italic">"Cách viết mạch lạc, ví dụ sát thực tế. Rất đáng tiền cho bất kỳ ai muốn nâng cao kỹ năng CSS."</p>
+                    <h5 class="fw-bold mb-0 mt-auto">Thùy Trang</h5>
+                    <small class="text-primary">UI/UX Designer</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 testimonial-card">
+                    <p class="text-muted italic">"Giải thích chuẩn cú pháp Dart Sass @use vô cùng rõ ràng, không còn bị warning lỗi thời nữa."</p>
+                    <h5 class="fw-bold mb-0 mt-auto">Hoàng Nam</h5>
+                    <small class="text-primary">Fullstack Web Student</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 BookMaster. Bản quyền thuộc về tác giả.</p>
+            <p class="mb-0">Xây dựng bằng Bootstrap 5 & SASS Modular Architecture.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.feature-card, .price-card, .testimonial-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover, .price-card:hover, .testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.price-card.popular {
+  border: 2px solid #0d6efd;
+  transform: scale(1.03);
+}
+
+.feature-card, .price-card, .testimonial-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover, .price-card:hover, .testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.price-card.popular {
+  border: 2px solid #0d6efd;
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 30px 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #0d6efd;
+}
+
+/*# sourceMappingURL=styles.css.map */
