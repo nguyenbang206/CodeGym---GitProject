@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản - Bootstrap Forms & Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5 min-vh-100 d-flex align-items-center">
+        <div class="row w-100 mx-0 justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="card border-0 shadow-lg overflow-hidden rounded-4">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-none d-lg-block bg-dark position-relative">
+                            <div id="benefitCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Lợi ích 1">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                            <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                                            <h3 class="fw-bold">Học Tập Nhanh Chóng</h3>
+                                            <p class="px-3">Lộ trình được thiết kế chuẩn thực chiến giúp bạn nâng cao kỹ năng lập trình vượt bậc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Lợi ích 2">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                            <h3 class="fw-bold">Cộng Đồng Năng Động</h3>
+                                            <p class="px-3">Giao lưu và học hỏi cùng hàng ngàn học viên, chuyên gia hàng đầu trong ngành.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Lợi ích 3">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                            <i class="fas fa-briefcase fa-3x text-primary mb-3"></i>
+                                            <h3 class="fw-bold">Cơ Hội Việc Làm</h3>
+                                            <p class="px-3">Hỗ trợ kết nối nhà tuyển dụng ngay sau khi hoàn tất khóa học.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 bg-white p-4 p-sm-5">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bold text-dark">Tạo Tài Khoản</h2>
+                                <p class="text-muted small">Điền thông tin bên dưới để trải nghiệm ngay hôm nay</p>
+                            </div>
+
+                            <form>
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label fw-medium">Họ và tên</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-muted"><i class="fas fa-user"></i></span>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Nguyễn Văn A" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-medium">Địa chỉ Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-muted"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label fw-medium">Mật khẩu</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-muted"><i class="fas fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="password" placeholder="Tối thiểu 8 ký tự" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="confirmPassword" class="form-label fw-medium">Xác nhận mật khẩu</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-muted"><i class="fas fa-shield-alt"></i></span>
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn btn-primary btn-lg fw-bold fs-6">
+                                        <i class="fas fa-user-plus me-2"></i>Đăng Ký Ngay
+                                    </button>
+                                </div>
+
+                                <p class="text-center text-muted small mb-0">
+                                    Đã có tài khoản? <a href="#" class="text-primary text-decoration-none fw-bold">Đăng nhập</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
