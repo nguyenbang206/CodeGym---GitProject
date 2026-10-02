@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Phối Màu Đơn Tông - CodeGym</title>
+    <style>
+        body {
+            background-color: #00BFF2;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .logo span {
+            background-color: #00ADEE;
+            color: #ffffff;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        nav a {
+            color: #000000;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content-box {
+            background-color: #8DD7F7;
+            color: #000000;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge-sale {
+            background-color: #00ADEE;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .btn-preview {
+            background-color: #00ADEE;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-preview:hover {
+            background-color: #00B2EF;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #C6E9FA;
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo"><span>CodeGym</span> Store</div>
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Liên hệ</a>
+            </nav>
+        </header>
+
+        <main class="content-box">
+            <h2>Chương Trình Khuyến Mãi Đặc Biệt</h2>
+            <p>Trải nghiệm giao diện trang web được thiết kế theo nguyên tắc phối màu đơn tông (Monochromatic) phát triển từ sắc xanh chủ đạo của CodeGym.</p>
+            
+            <div style="margin: 20px 0;">
+                <span class="badge-sale">ON SALE 50%</span>
+                <span style="margin-left: 10px; font-weight: bold;">Áp dụng cho tất cả khóa học Frontend</span>
+            </div>
+
+            <button class="btn-preview">PREVIEW NGAY</button>
+
+            <h3 style="margin-top: 30px;">Sản Phẩm Nổi Bật</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Laptop">
+                    <span class="badge-sale">ON SALE</span>
+                    <h4 style="margin: 10px 0 5px;">Khoá học SASS</h4>
+                    <p style="font-weight: bold; margin: 0;">590.000đ</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80" alt="Keyboard">
+                    <span class="badge-sale">ON SALE</span>
+                    <h4 style="margin: 10px 0 5px;">Khoá học HTML/CSS</h4>
+                    <p style="font-weight: bold; margin: 0;">390.000đ</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Headphone">
+                    <button class="btn-preview" style="padding: 4px 12px; font-size: 12px; margin-top: 5px;">PREVIEW</button>
+                    <h4 style="margin: 10px 0 5px;">Khoá học Bootstrap 5</h4>
+                    <p style="font-weight: bold; margin: 0;">490.000đ</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <p style="margin: 0;">&copy; 2026 CodeGym Demo - Phối Màu Đơn Tông (Monochromatic Palette).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
